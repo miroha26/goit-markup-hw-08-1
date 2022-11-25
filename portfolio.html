@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container container--header--display">
+        <div class="tablet-header">
+          <nav class="navigation">
+            <a href="./index.html" class="logo"
+              ><span class="logo--blue">Web</span>Studio</a
+            >
+            <div class="mobile-menu-window">
+              <button
+                class="mobile-btn js-open-menu"
+                type="button"
+                aria-label="Перемикач меню"
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="icon-open"
+                    href="./images/icons.svg#menu-open"
+                    aria-expanded="true"
+                  ></use>
+                </svg>
+              </button>
+              <div class="mobile-window">
+                <div class="mobile-menu js-menu-container">
+                  <button
+                    class="mobile-btn icon-close js-close-menu"
+                    aria-label="Перемикач меню"
+                    type="button"
+                  >
+                    <svg width="40" height="40">
+                      <use class="" href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                      <a
+                        href="./index.html"
+                        class="mobile-nav__link mobile-nav__link--hovered"
+                        >Студія</a
+                      >
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a
+                        href="./portfolio.html"
+                        class="mobile-nav__link mobile-nav__link--blue"
+                        >Портфоліо</a
+                      >
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a
+                        href="#"
+                        class="mobile-nav__link mobile-nav__link--hovered"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item">
+                      <a
+                        href="tel:+380961111111"
+                        class="mobile-contacts__link mobile-contacts__link--hovered"
+                      >
+                        +38 096 111 11 11</a
+                      >
+                    </li>
+                    <li class="mobile-contacts__item">
+                      <a
+                        href="mailto:info@devstudio.com"
+                        class="mobile-contacts__link mobile-contacts__link--mail"
+                      >
+                        info@devstudio.com</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="mobile-links">
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__link--hovered"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--blue"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link site-nav__link--hovered"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts__link contacts__link--hovered"
+              >
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a
+                href="tel:+380961111111"
+                class="contacts__link contacts__link--hovered"
+              >
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title visually-hidden">Фільтри</h1>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button all-btn">
+                Усі
+              </button>
+            </li>
+            <li class="filter-list__item">
+              <button
+                type="button"
+                class="filter-list__button filter-list__button--padding"
+              >
+                Веб-сайти
+              </button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">Додатки</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">Дизайн</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <h2 class="section-title visually-hidden">Роботи</h2>
+          <ul class="work-list">
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project1.jpg   1x,
+                        ./images/portfolio/desktop/project1@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project1.jpg   1x,
+                        ./images/portfolio/tablet/project1@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project1.jpg   1x,
+                        ./images/portfolio/mobile/project1@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+
+                    <img
+                      src="./images/portfolio/mobile/project1.jpg"
+                      alt="Екран ноутбука с веб-сайтом Технокряк"
+                  /></picture>
+                  <p class="work-list__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Технокряк</h3>
+                  <p class="work-type__type">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project2.jpg   1x,
+                        ./images/portfolio/desktop/project2@2.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project2.jpg   1x,
+                        ./images/portfolio/tablet/project2@2.jpg 2x
+                      "
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project2.jpg   1x,
+                        ./images/portfolio/mobile/project2@2.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project2.jpg"
+                      alt="Два баскетболіста"
+                    />
+                  </picture>
+                  <p class="work-list__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae consectetur laboriosam deleniti iusto eos adipisci
+                    doloribus ab quidem facilis similique beatae, iure, sed
+                    fugiat molestias.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name work-type__name--spacing">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="work-type__type">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project3.jpg   1x,
+                        ./images/portfolio/desktop/project3@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project3.jpg   1x,
+                        ./images/portfolio/tablet/project3@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project3.jpg   1x,
+                        ./images/portfolio/mobile/project3@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project3.jpg"
+                      alt="Logo ресторану Seafood"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                    dolores tempora, iste quasi molestiae, cum voluptatum
+                    consectetur esse ratione vero neque aut labore nisi
+                    corporis.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Ресторан Seafood</h3>
+                  <p class="work-type__type">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project4.jpg   1x,
+                        ./images/portfolio/desktop/project4@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project4.jpg   1x,
+                        ./images/portfolio/tablet/project4@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project4.jpg   1x,
+                        ./images/portfolio/mobile/project4@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project4.jpg"
+                      alt="Навушники"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta voluptate a repudiandae doloribus ex est deserunt nemo
+                    harum recusandae id, consequuntur culpa, repellendus quod
+                    veniam.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Проєкт Prime</h3>
+                  <p class="work-type__type">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project5.jpg   1x,
+                        ./images/portfolio/desktop/project5@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project5.jpg   1x,
+                        ./images/portfolio/tablet/project5@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project5.jpg   1x,
+                        ./images/portfolio/mobile/project5@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project5.jpg"
+                      alt="Дві коробки"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam ullam, excepturi dicta, exercitationem
+                    voluptatibus repellendus obcaecati architecto perferendis
+                    odit laboriosam quas quo atque voluptates. Unde!
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Проєкт Boxes</h3>
+                  <p class="work-type__type">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project6.jpg   1x,
+                        ./images/portfolio/desktop/project6@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project6.jpg   1x,
+                        ./images/portfolio/tablet/project6@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project6.jpg   1x,
+                        ./images/portfolio/mobile/project6@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project6.jpg"
+                      alt="Екран ноутбука з веб-сайтом Inspiration has no Borders "
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod sequi quam doloremque amet rerum non consequuntur porro
+                    possimus eos pariatur. Fuga atque ducimus dolore ipsam.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Inspiration has no Borders</h3>
+                  <p class="work-type__type">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project7.jpg   1x,
+                        ./images/portfolio/desktop/project7@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project7.jpg   1x,
+                        ./images/portfolio/tablet/project7@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project7.jpg   1x,
+                        ./images/portfolio/mobile/project7@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img src="./images/img6.jpg" alt="Розгорнута книга"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aliquam facilis ab debitis eum alias laborum? Quae itaque
+                    eius, veritatis officiis totam rem cumque vel sequi.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Видання Limited Edition</h3>
+                  <p class="work-type__type">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project8.jpg   1x,
+                        ./images/portfolio/desktop/project8@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project8.jpg   1x,
+                        ./images/portfolio/tablet/project8@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project8.jpg   1x,
+                        ./images/portfolio/mobile/project8@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project8.jpg"
+                      alt="Logo проєкту LAB"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Est, debitis. Omnis a aperiam nesciunt in! Maiores adipisci
+                    aspernatur officia eligendi architecto dolore facilis
+                    voluptatibus officiis.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Проєкт LAB</h3>
+                  <p class="work-type__type">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project9.jpg   1x,
+                        ./images/portfolio/desktop/project9@2.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project9.jpg   1x,
+                        ./images/portfolio/tablet/project9@2.jpg 2x
+                      "
+                      media="(min-width:767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project9.jpg   1x,
+                        ./images/portfolio/mobile/project9@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project9.jpg"
+                      alt="Зображення додатку Growing Business в ноутбукі"
+                  /></picture>
+                  <p class="work-list__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    aut temporibus dicta quaerat perferendis delectus accusamus
+                    non odio necessitatibus. Voluptatem laborum dolor veritatis
+                    repellendus saepe.
+                  </p>
+                </div>
+                <div class="work-type">
+                  <h3 class="work-type__name">Growing Business</h3>
+                  <p class="work-type__type">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container container--position">
+        <div class="tablet-footer">
+          <address class="address">
+            <a href="./index.html" class="footer-logo"
+              ><span class="footer-logo--white">Web</span>Studio</a
+            >
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="location"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com" class="address-list__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-wrapper">
+            <h3 class="join-title">Приєднуйтесь</h3>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-list__link social-list__link--bg"
+                >
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://www.twitter.com/"
+                  class="social-list__link social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-list__link social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-list__link social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="subscribe-form">
+          <h3 class="join-title">Підпишіться на розсилку</h3>
+          <div class="flex-box subscribe-form--accent">
+            <label class="subscribe-form__label">
+              <input
+                class="subscribe-form__input"
+                type="email"
+                placeholder="E-mail"
+              /> </label
+            ><button class="subscribe-form__button" type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
