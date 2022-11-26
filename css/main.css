@@ -9,6 +9,10 @@
   --social-links-fill: #afb1b8;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -39,7 +43,7 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--btn-text-color);
-  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -505,7 +509,7 @@ textarea:focus {
 
 .logo {
   color: #000000;
-  font-family: Raleway, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway',sans-serif;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1185,12 +1189,14 @@ textarea:focus {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
 .clients-list__item {
   display: flex;
+  width: calc(50% - 15px);
+  
 }
 @media screen and (min-width: 1200px) {
   .clients-list__item {
