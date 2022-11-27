@@ -28,6 +28,7 @@
         width: 100vw;
         top:0;
         left: 0;
+        overflow-y: auto;
         z-index: 1;
         height:100vh ;
         background-color: var(--btn-text-color);
@@ -44,6 +45,7 @@
         padding: 0;
     }
     .mobile-nav{
+        margin-bottom: 48px;
         flex-direction: column;
         display: flex;
 

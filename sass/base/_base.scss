@@ -5,6 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 @media screen and (min-width: 1200px) {
     .flex-box {
         display: flex;

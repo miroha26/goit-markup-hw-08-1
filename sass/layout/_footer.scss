@@ -15,24 +15,28 @@
     align-items: baseline;
 }
 }
+.tablet-footer{
+    display: flex;
+    gap: 60px;
+}
 @media screen and (min-width:768px) and (max-width:1199px) {
     .tablet-footer {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: baseline;
     }
 }
 @media screen and (min-width:1200px) {
     .tablet-footer {
-        display: flex;
-        align-items: baseline;
+        justify-content: flex-start;
         gap: 70px;
     }
 }
 .footer-logo {
-     @media screen and (mim-width:1200px) {
-                    display: flex;
-     } 
+    @media screen and (mim-width:1200px) {
+        display: flex;
+    } 
     display: block;
     font-family: 'Raleway',sans-serif;
     font-style: normal;
@@ -132,7 +136,7 @@
 }
 @media screen and (min-width:1200px) {
         .subscribe-form {
-                margin-left: 23px;
+                margin-left: auto;
             }
         }
 .subscribe-form--accent{
